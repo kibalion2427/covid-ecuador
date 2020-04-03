@@ -9,5 +9,5 @@ router.register('covid',CovidCaseViewSet,basename='covid')
 router.register('history',ProvinceHistoryViewSet,basename='history')
 urlpatterns = [
     path('viewset/',include(router.urls)),
-    path('viewset/covid/<int:fk_pais>/<int:fk_provincia>/',CovidCaseViewSet)
+    # path('viewset/covid/<int:fk_pais>/<int:fk_provincia>/',CovidCaseViewSet)
 ]
